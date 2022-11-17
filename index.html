@@ -1,102 +1,90 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>SILKNOW Data infrastructure</title>
   <meta charset="utf-8">
-  <link rel="shortcut icon" type="image/png" href="assets/silknowlogofavicon_small.png"/>
+  <link rel="shortcut icon" type="image/png" href="assets/silknowlogofavicon_small.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
 </head>
+
 <body>
- <div id="app">
-   <v-app light>
-	   <v-app-bar color="white" app flat="True" height="100">
-      		  <img src="assets/cropped-silknow-1.png"  ></img>
+  <div id="app">
+    <v-app light>
+      <v-app-bar color="white" app flat="True" height="100">
+        <img src="assets/cropped-silknow-1.png"></img>
       </v-app-bar>
-    <v-content >
-      <section  >
-        <v-parallax   src="assets/hero.jpeg" height="400" >
-     
-        </v-parallax>
-      </section>
+      <v-content>
+        <section>
+          <v-parallax src="assets/hero.jpeg" height="400"></v-parallax>
+        </section>
 
-      <section>
-		  
-		  
-		  
-		    <v-row align="center">
-    <v-col class="text-center" o>
-  
-      <div class="my-2">
-        <v-btn dark large color="grey" href="http://data.silknow.org/sparql">SPARQL</v-btn>
-      </div>
+        <section>
+          <v-row align="center">
+            <v-col class="text-center" o>
+              <div class="my-2">
+                <v-btn dark large color="grey" href="http://data.silknow.org/sparql">SPARQL</v-btn>
+              </div>
+            </v-col>
 
-    </v-col>
-    <v-col class="text-center" o>
-      
-      <div class="my-2">
-        <v-btn dark large color="grey" href="http://data.silknow.org/api/" >API</v-btn>
-      </div>
-      
-    </v-col>
-    <v-col class="text-center" o>
-     
-      <div class="my-2">
-        <v-btn dark large color="grey" href="http://data.silknow.org/fct/">Facet Browser</v-btn>
-      </div>
-      </v-col>
-      <v-col class="text-center" o>
-     
-      <div class="my-2">
-        <v-btn dark large color="grey" href="http://skosmos.silknow.org/thesaurus/" >Thesaurus</v-btn>
-      </div>
-      
-    </v-col>
-       <v-col class="text-center" o>
-     
-      <div class="my-2">
-        <v-btn dark large color="grey" href="http://ontome.dataforhistory.org/profile/7#classes">Ontology</v-btn>
-      </div>
-      
-    </v-col>
-  </v-row>
-        
-      </section>
+            <v-col class="text-center" o>
+              <div class="my-2">
+                <v-btn dark large color="grey" href="http://data.silknow.org/api/">API</v-btn>
+              </div>
+            </v-col>
 
-  
+            <v-col class="text-center" o>
+              <div class="my-2">
+                <v-btn dark large color="grey" href="http://data.silknow.org/fct/">Facet Browser</v-btn>
+              </div>
+            </v-col>
 
-  <v-footer height="auto" color="grey" dark>
-        <v-layout justify-center row wrap>
-	     <v-flex color="indigo" dark pt-4 mr-3  white--text xs1>
-	      <a href="https://ec.europa.eu/" target="_blank" rel="noopener noreferrer">
-	     <img src="assets/LOGO-CE_EN_quadri_LR.png" style="width:80%;height:80%"></img>
-	     </a>
+            <v-col class="text-center" o>
+              <div class="my-2">
+                <v-btn dark large color="grey" href="http://skosmos.silknow.org/thesaurus/">Thesaurus</v-btn>
+              </div>
+            </v-col>
 
-          </v-flex>
-          <v-flex color="indigo" dark pt-5   white--text xs3>
-          This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 769504.
+            <v-col class="text-center" o>
+              <div class="my-2">
+                <v-btn dark large color="grey" href="http://ontome.dataforhistory.org/profile/7#classes">Ontology
+                </v-btn>
+              </div>
+            </v-col>
+          </v-row>
+        </section>
 
-          </v-flex>
-          
-        </v-layout>
-      </v-footer>
+        <v-footer height="auto" color="grey" dark>
+          <v-layout justify-center row wrap>
+            <v-flex color="indigo" dark pt-4 mr-3 white--text xs1>
+              <a href="https://ec.europa.eu/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/LOGO-CE_EN_quadri_LR.png" style="width:80%;height:80%"></img>
+              </a>
+            </v-flex>
 
-    </v-content>
-  </v-app>
- </div>
- <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
- <script >
-   new Vue({
-    el: '#app',
-    vuetify: new Vuetify(),
-    data () {
-      return {
+            <v-flex color="indigo" dark pt-5 white--text xs3>
+              This project has received funding from the European Union’s Horizon 2020 research and innovation programme
+              under grant agreement No 769504.
+            </v-flex>
+          </v-layout>
+        </v-footer>
+      </v-content>
+    </v-app>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data() {
+        return {}
       }
-    }
-  })
- </script>
+    })
+  </script>
 </body>
+
 </html>
