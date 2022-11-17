@@ -9,20 +9,21 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <style>.v-main__wrap { display: flex; flex-direction: column; }</style>
 </head>
 
 <body>
   <div id="app">
     <v-app light>
       <v-app-bar color="white" app flat="True" height="100">
-        <img src="assets/cropped-silknow-1.png"></img>
+        <img src="assets/cropped-silknow-1.png" style="max-width: 100%;" />
       </v-app-bar>
-      <v-content>
+      <v-main>
         <section>
-          <v-parallax src="assets/hero.jpeg" height="400"></v-parallax>
+          <v-parallax src="assets/hero.jpeg" height="400" />
         </section>
 
-        <section>
+        <section class="flex-grow-1 d-flex">
           <v-row align="center">
             <v-col class="text-center" o>
               <div class="my-2">
@@ -58,20 +59,18 @@
         </section>
 
         <v-footer height="auto" color="grey" dark>
-          <v-layout justify-center row wrap>
-            <v-flex color="indigo" dark pt-4 mr-3 white--text xs1>
-              <a href="https://ec.europa.eu/" target="_blank" rel="noopener noreferrer">
-                <img src="assets/LOGO-CE_EN_quadri_LR.png" style="width:80%;height:80%"></img>
-              </a>
-            </v-flex>
+          <v-layout flex justify-center align-center wrap py-5>
+            <a href="https://ec.europa.eu/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/LOGO-CE_EN_quadri_LR.png" width="150" height="104" />
+            </a>
 
-            <v-flex color="indigo" dark pt-5 white--text xs3>
+            <v-flex dark ml-12 white--text xs3>
               This project has received funding from the European Union’s Horizon 2020 research and innovation programme
               under grant agreement No 769504.
             </v-flex>
           </v-layout>
         </v-footer>
-      </v-content>
+      </v-main>
     </v-app>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
